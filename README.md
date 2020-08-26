@@ -1,6 +1,6 @@
 # COVID India Model
 
-COVID India model allows the simulation of different options before the Government of India to contain the COVID-19 pandemic. It provides a means to evaluate the impact of different options on new cases per day, total cases, total deaths and active cases. For a [explanation about the methodology and the results see](http://ssrn.com/abstract=3674767). [This ppt](https://github.com/AnupamSaraph/COVID-Simulation/blob/master/PPT/Covid%20India%20Model.pptx) summarizes the results of the different scenarios documented in the [paper](http://ssrn.com/abstract=3674767).
+COVID India model allows the simulation of different options before the Government of India to contain the COVID-19 pandemic. It provides a means to evaluate the impact of different options on new cases per day, total cases, total deaths and active cases. For a [explanation about the methodology and the results see](http://ssrn.com/abstract=3674767). This [ppt summarizes the results](https://github.com/AnupamSaraph/COVID-Simulation/blob/master/PPT/Covid%20India%20Model.pptx) of the different scenarios documented in the [paper](http://ssrn.com/abstract=3674767).
 
 
 ## Usage
