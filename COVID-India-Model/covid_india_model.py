@@ -253,7 +253,7 @@ def model(t, dt, j, k, jk, kl):
                  cmc.infectiveness_i[k])/cmc.recovery_rate[k]
     cmc.infection_growth_rate[k] = (
         cmc.infected[k]-cmc.infected[j])/max(1, cmc.infected[j])*100
-    cmc.infection_doubling_time[k] = 70/cmc.infection_growth_rate[k]
+    if cmc.infection_growth_rate[k]: cmc.infection_doubling_time[k] = 70/cmc.infection_growth_rate[k]
 
 
 # %%
