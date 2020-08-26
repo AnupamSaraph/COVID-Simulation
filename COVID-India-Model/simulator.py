@@ -62,7 +62,7 @@ def reset(ver):
           "\n" + developer + "\n" + notice)
     Scenarios = {}
     Describe = {}
-    PeakStatisticprint = {}
+    PeakStatistic = {}
     description = {}
 
     if not os.path.exists(ver):
@@ -158,7 +158,7 @@ def store_scenario(scenario, df, description, dt):
     # add the dataframe as value with scenario name as key in a dictionary
     Scenarios[scenario] = df
     Describe[scenario] = description
-    PeakStatistic[scenario] = peak_statistics(df, dt)
+    #PeakStatistic[scenario] = peak_statistics(df, dt)
     return Scenarios[scenario]
 
 
@@ -495,23 +495,23 @@ def compare_scenarios_to_excel(filename):
 
     # aggregate all scenario values for each peak statistic
     # write aggregated peak statistics into different worksheet
-    df1 = describe_peaks()
-    # try:
-    peak_start = pd.pivot_table(df1, values='peak_start', index=[
-        'no'], columns=['scenario'])
-    peak_end = pd.pivot_table(df1, values='peak_end', index=[
-        'no'], columns=['scenario'])
-    peak_height = pd.pivot_table(df1, values='peak_height', index=[
-        'no'], columns=['scenario'])
-    peak_duration = pd.pivot_table(df1, values='peak_duration', index=[
-        'no'], columns=['scenario'])
-    # except:
-    #    print("some non numeric values")
+    # df1 = describe_peaks()
+    # # try:
+    # peak_start = pd.pivot_table(df1, values='peak_start', index=[
+    #     'no'], columns=['scenario'])
+    # peak_end = pd.pivot_table(df1, values='peak_end', index=[
+    #     'no'], columns=['scenario'])
+    # peak_height = pd.pivot_table(df1, values='peak_height', index=[
+    #     'no'], columns=['scenario'])
+    # peak_duration = pd.pivot_table(df1, values='peak_duration', index=[
+    #     'no'], columns=['scenario'])
+    # # except:
+    # #    print("some non numeric values")
 
-    peak_start.to_excel(writer, sheet_name="peak_start")
-    peak_end.to_excel(writer, sheet_name="peak_end")
-    peak_height.to_excel(writer, sheet_name="peak_height")
-    peak_duration.to_excel(writer, sheet_name="peak_duration")
+    # peak_start.to_excel(writer, sheet_name="peak_start")
+    # peak_end.to_excel(writer, sheet_name="peak_end")
+    # peak_height.to_excel(writer, sheet_name="peak_height")
+    # peak_duration.to_excel(writer, sheet_name="peak_duration")
 
     writer.save()
 
