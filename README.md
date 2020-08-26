@@ -41,7 +41,7 @@ in the notebook, the model outputs will be displayed in the interactive notebook
 ```python
 sim.Save = True
 ``` 
-in the notebook, the results of the simulation will be saved in a folder with the version of the model (currently 5.6.01.2020).
+in the notebook, the results of the simulation will be saved in a folder with the version of the model (currently 6.00.00.2020).
 
 ## Copyright and Licenses
 
