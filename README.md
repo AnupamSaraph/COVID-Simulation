@@ -13,7 +13,7 @@ COVID India model allows the simulation of different options before the Governme
 
 
 
-To **run the model offline**, you will need to install the model code and requirements. These files have not yet been added to the repository, this file will change when they are.
+To **run the model offline**, you will need to install the model code and requirements. 
 
 Use pip to install COVID-India-model:
 
